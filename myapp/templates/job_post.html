@@ -3,6 +3,10 @@
 <div class="jumbotron">
   <h1>{{ job.title }}</h1>
   <p>{{job.company}}</p>
+  <p>${{job.pay}}</p>
+  <p>{{job.language}}</p>
+  <p>{{job.database}}</p>
+  <p>{{job.framework}}</p>
   {% if job.author == current_user %}
     <div>
       <a class="btn btn-secondary" href="{{ url_for('job_posts.update', job_post_id=job.id)}}">Update</a>

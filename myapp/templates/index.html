@@ -4,11 +4,15 @@
     <h1>Jobs</h1>
     <div class="container">
       {% for job in job_posts.items %}
-        <div class="card">
-          <div class="car-boy">
-            <h2>
-              <a class="card-title" href="{{url_for('job_posts.job_post', job_post_id=job.id)}}">{{job.title}}</a>
-            </h2>
+        {% if current_user == job.author %}
+          <div class="card">
+            <div class="car-boy">
+              <h2>
+                <a class="card-title" href="{{url_for('job_posts.job_post', job_post_id=job.id)}}">
+                  <div>{{job.company}}${{job.pay}}</div>
+                </a>
+              </h2>
+            {% endif %}
           </div>
         </div>
       {% endfor %}
