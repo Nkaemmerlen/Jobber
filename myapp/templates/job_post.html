@@ -1,15 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="jumbotron">
-  <h1>{{ post.title }}</h1>
-  <h2>Written by: {{post.author.username}}</h2>
-  <h3>Published: {{ post.date.strftime('%B %d, %Y') }}</h3>
-  <p>{{post.company}}</p>
-  {% if post.author == current_user %}
+  <h1>{{ job.title }}</h1>
+  <p>{{job.company}}</p>
+  {% if job.author == current_user %}
     <div>
-      <a class="btn btn-secondary" href="{{ url_for('job_posts.update', job_post_id=post.id) }}">Update</a>
+      <a class="btn btn-secondary" href="{{ url_for('job_posts.update', job_post_id=job.id)}}">Update</a>
       <br>
-      <form action="{{ url_for('job_posts.delete_post', job_post_id=post.id) }}" method="POST">
+      <form action="{{ url_for('job_posts.delete_job', job_post_id=job.id) }}" method="POST">
         <input class="btn btn-danger" type="submit" value="Delete">
       </form>
     </div>

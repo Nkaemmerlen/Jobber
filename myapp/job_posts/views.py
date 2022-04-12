@@ -31,7 +31,7 @@ def create_job():
 @job_posts.route('/<int:job_post_id>')
 def job_post(job_post_id):
   job_post = JobPost.query.get_or_404(job_post_id)
-  return render_template('job_post.html', title=job_post.title, date=job_post.date, job=job_post)
+  return render_template('job_post.html', title=job_post.title, date=job_post.date, company=job_post.company, job=job_post)
 
 @job_posts.route('/<int:job_post_id>/update', methods=['GET', 'POST'])
 @login_required
