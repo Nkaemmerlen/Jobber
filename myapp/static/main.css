@@ -1,0 +1,25 @@
+body {
+  background-color: white;
+}
+.card-body{
+  display: flex;
+  justify-content: space-between;
+  transition: transform .2s;
+}
+
+.card {
+  background-color: whitesmoke;
+}
+
+.card:hover{
+  transform: scale(1.03);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
