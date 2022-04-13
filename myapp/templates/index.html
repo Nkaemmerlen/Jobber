@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
   <div class="jumbotron">
-    <h1>Jobs</h1>
+    <h1 class="index-title">Jobs</h1>
     <div class="container">
       {% for job in job_posts.items %}
         {% if current_user == job.author %}
@@ -17,7 +17,7 @@
     </div>
   </div>
   <nav aria-label="Page Navigation example">
-    <ul class="pagination justify-content-center">
+    <ul class="pagination justify-content-center bottom-nav">
       {% for page_num in job_posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
         {% if job_posts.page == page_num %}
           <li class="page-item disabled">

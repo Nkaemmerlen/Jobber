@@ -1,10 +1,10 @@
 body {
   background-color: white;
+  min-height: 100vh;
 }
 .card-body{
   display: flex;
   justify-content: space-between;
-  transition: transform .2s;
 }
 
 .card {
@@ -23,3 +23,13 @@ a {
 a:hover {
   color: black;
 }
+
+.bottom-nav{
+  position: fixed;
+  bottom: 0;
+}
+
+div.container div.card:last-of-type{
+  margin-bottom: 70px;
+}
+
