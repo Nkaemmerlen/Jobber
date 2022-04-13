@@ -33,3 +33,6 @@ div.container div.card:last-of-type{
   margin-bottom: 70px;
 }
 
+.index-title{
+  text-align: center;
+}
