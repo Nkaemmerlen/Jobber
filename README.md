@@ -1,7 +1,7 @@
 # Jobber
 Jobber is an app to help the future software engineers better organize their job applications. You will be able to scroll through your different job applications and all of the information to get prepared for the many steps of interviews. Jobber will help you stay organized and ensure preperation for your future interviews!
 
-## Click this [link](google.com) to get started!
+## Click this [link](https://the-jobber-app.herokuapp.com/) to get started!
 ---
 ![Index Page](https://i.imgur.com/J0tIoC1.png)
 ![Create Page](https://i.imgur.com/2W6ltQm.png)
