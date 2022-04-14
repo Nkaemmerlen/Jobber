@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
   <div class="jumbotron">
-    <h1 class="index-title">Jobs</h1>
+    <h1 class="index-title">Your Jobs</h1>
     <div class="container">
       {% for job in job_posts.items %}
         {% if current_user == job.author %}

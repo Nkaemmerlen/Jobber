@@ -12,7 +12,7 @@ body {
 }
 
 .card:hover{
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 a {
@@ -35,4 +35,35 @@ div.container div.card:last-of-type{
 
 .index-title{
   text-align: center;
+  padding-top: 7px;
+}
+
+.login-form {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+
+.login-header {
+  text-align: center;
+}
+
+.email-form {
+  margin-bottom: 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.top-link:hover {
+  color: gray;
 }

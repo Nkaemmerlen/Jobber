@@ -2,10 +2,18 @@
 {% block content %}
 
 <form method="POST">
-  {{form.hidden_tag()}}
-  {{form.email.label}}{{form.email}}<br>
-  {{form.password.label}}{{form.password}}<br>
-  {{form.submit()}}
-
+  <h2 class="login-header">Please Login</h2>
+  <div class='login-form'>
+    {{form.hidden_tag()}}
+    <div class="email-form">
+      {{form.email.label}}
+      {{ form.email(class_="form-control") }}<br>
+    </div>
+    <div class="password-form">
+      {{form.password.label}}
+      {{ form.password(class_="form-control") }}<br>
+    </div>
+    {{form.submit()}}
+  </div>
 </form>
 {% endblock %}
