@@ -2,11 +2,18 @@
 {% block content %}
 
 <form method="POST">
-  {{form.hidden_tag()}}
-  {{form.email.label}}{{form.email}}<br>
-  {{form.username.label}}{{form.username}}<br>
-  {{form.password.label}}{{form.password}}<br>
-  {{form.pass_confirm.label}}{{form.pass_confirm}}<br>
-  {{form.submit()}}
+  <div class="register-form">
+    {{form.hidden_tag()}}
+    {{form.email.label}}
+    {{ form.email(class_="form-control") }}<br>
+    {{form.username.label}}
+    {{ form.username(class_="form-control") }}<br>
+    {{form.password.label}}
+    {{ form.password(class_="form-control") }}<br>
+    {{form.pass_confirm.label}}
+    {{ form.pass_confirm(class_="form-control") }}<br>
+    {{form.submit()}}
+  </div>
+
 </form>
 {% endblock %}

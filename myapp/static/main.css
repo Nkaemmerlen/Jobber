@@ -39,7 +39,7 @@ div.container div.card:last-of-type{
   padding-top: 7px;
 }
 
-.login-form {
+.login-form, .register-form {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -67,4 +67,15 @@ div.container div.card:last-of-type{
 
 .top-link:hover {
   color: gray;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  width: 75%;
+  margin: 10px;
+}
+
+.both-buttons{
+  text-align: center;
 }

@@ -14,7 +14,7 @@
     <p>Framework(s): {{job.framework}}</p>
   {% endif %}
   {% if job.author == current_user %}
-    <div>
+    <div class="both-buttons">
       <a class="btn btn-secondary" href="{{ url_for('job_posts.update', job_post_id=job.id)}}">Update</a>
       <br>
       <form action="{{ url_for('job_posts.delete_job', job_post_id=job.id) }}" method="POST">
