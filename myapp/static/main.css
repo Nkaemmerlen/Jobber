@@ -1,6 +1,7 @@
 body {
   background-color: white;
   min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 .card-body{
   display: flex;
@@ -57,7 +58,7 @@ div.container div.card:last-of-type{
 
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   border-bottom: 1px solid gray;
   padding-bottom: 5px;
   padding-top: 5px;
